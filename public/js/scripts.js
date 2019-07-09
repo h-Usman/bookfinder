@@ -31,12 +31,22 @@ function findBook(){
             div.appendChild(author);
 
             var country = document.createElement('p');
-            country.innerHTML = 'Country  ' + book.items[i].accessInfo.country;
+            country.innerHTML = 'Country  ' + book.items[i].accessInfo.country + ' ';
             div.appendChild(country);
+
             
+            var pageCount = document.createElement('p');
+            pageCount.innerHTML = ' Pages: ' + book.items[i].volumeInfo.pageCount;
+            div.appendChild(pageCount);
+            
+            var publishedYear = document.createElement('p');
+            publishedYear.innerHTML = book.items[i].volumeInfo.publishedDate;
+            div.appendChild(publishedYear);
+
             var desp = document.createElement('p');
             desp.innerHTML = book.items[i].volumeInfo.description;
             div.appendChild(desp);
+
     
             var line = document.createElement('hr');
             bookResult.appendChild(wrapppperDiv);
