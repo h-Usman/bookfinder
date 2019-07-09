@@ -9,6 +9,7 @@ function findBook(){
         type:"GET",
         url: "https://www.googleapis.com/books/v1/volumes?q=" + userSearch,
         datatype: "JSON",
+        crossdomain:true,
         success: function(book){
             console.log(book);
             for(var i = 0; book.items.length; i++){
