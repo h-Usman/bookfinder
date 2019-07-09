@@ -1,6 +1,7 @@
 #main-body{
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 p{
     position: relative;
@@ -10,4 +11,18 @@ p{
     line-height: 1.2em;
     text-align: justify;
     margin-bottom: .50rem;
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+.media{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    flex-direction: column!important;
 }
